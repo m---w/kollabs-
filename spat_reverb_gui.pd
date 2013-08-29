@@ -1,0 +1,12 @@
+#N canvas 268 101 450 300 10;
+#X text 15 3 spat_reverb_gui <name>;
+#X text 76 222 (c)2012 Marian Weger;
+#X obj 103 115 hsl 128 15 -100 0 0 0 /spat/reverb/\$1/level /spat/reverb/\$1/level
+level 10 8 0 10 -261234 -1 -1 12700 1;
+#X obj 103 130 hsl 128 15 0 100 0 0 /spat/reverb/\$1/liveness /spat/reverb/\$1/liveness
+liveness 10 8 0 10 -261682 -1 -1 11430 1;
+#X obj 103 145 hsl 128 15 20 20000 0 0 /spat/reverb/\$1/crossover /spat/reverb/\$1/crossover
+crossover 10 8 0 10 -204800 -1 -1 1894 1;
+#X obj 103 160 hsl 128 15 0 100 0 0 /spat/reverb/\$1/damping /spat/reverb/\$1/damping
+damping 10 8 0 10 -204786 -1 -1 2540 1;
+#X coords 0 -1 1 1 133 75 1 100 100;

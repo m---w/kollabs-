@@ -1,0 +1,52 @@
+#N canvas 333 57 564 517 10;
+#X obj 101 101 cnv 13 413 202 empty \$0-label \$1 2 7 0 10 -261689
+-1 0;
+#X obj 123 157 an_vu_24_gui cs/\$1;
+#X text 65 367 (c)2013 Marian Weger;
+#X obj 100 159 vsl 23 128 0 1.27 0 0 /fx/vol/cs/\$1 /fx/vol/cs/\$1
+empty 0 -9 0 10 -261689 -1 -1 0 1;
+#X obj 100 290 nbx 3 14 -100 24 0 0 /fx/vol/cs/\$1/db /fx/vol/cs/\$1/db
+empty 0 -8 0 10 -261689 -1 -1 -100 256;
+#X obj 100 115 nbx 3 14 -99 999 0 0 /fx/gain/cs/\$1 /fx/gain/cs/\$1
+empty 0 -8 0 10 -261689 -1 -1 0 256;
+#X obj 474 159 vsl 14 128 0 1 0 0 /fx/vol/cs/\$1/send /fx/vol/cs/\$1/send
+empty 0 -9 0 10 -261689 -1 -1 0 1;
+#X obj 595 60 loadbang;
+#X obj 595 82 f \$2;
+#X obj 595 126 s \$0-label;
+#X msg 595 104 color \$1 22 22;
+#X obj 454 290 tgl 14 0 /fx/state/cs/\$1/monitor /fx/state/cs/\$1/monitor
+empty 17 7 0 10 -257985 -1 -1 0 1;
+#X obj 440 290 tgl 14 0 /mix/mux/cs/\$1/monitor /mix/mux/cs/\$1/monitor
+p 4 7 0 10 -257985 -1 -1 0 1;
+#X obj 501 100 tgl 14 0 /cs/\$1/state /cs/\$1/state empty 17 7 0 10
+-225271 -225271 -1 0 1;
+#X obj 577 205 sel 0 1;
+#X msg 577 255 color \$1 \$1 22;
+#X msg 577 227 6;
+#X msg 607 227 16;
+#X obj 100 143 fx_eq7_gui cs/\$1;
+#X obj 487 100 fx_mute_gui cs/\$1;
+#X obj 453 256 tgl 15 0 /mix/mux/cs/\$1/vu /mix/mux/cs/\$1/vu pr 2
+-7 0 10 -261682 -1 -1 0 1;
+#X obj 577 183 r /cs/\$1/state;
+#X obj 488 157 an_vu_gui /cs/\$1/lfe;
+#X text 45 31 cs_out_24_gui <name> (<label color>);
+#X obj 474 143 fx_eq2_gui /cs/\$1/lfe;
+#X obj 173 129 fx_multigain_24_gui cs/\$1;
+#X obj 173 143 fx_multidelay_24_gui cs/\$1;
+#X text 483 123 LFE;
+#X connect 7 0 8 0;
+#X connect 8 0 10 0;
+#X connect 10 0 9 0;
+#X connect 10 0 3 0;
+#X connect 10 0 4 0;
+#X connect 10 0 6 0;
+#X connect 10 0 5 0;
+#X connect 14 0 16 0;
+#X connect 14 1 17 0;
+#X connect 15 0 13 0;
+#X connect 16 0 15 0;
+#X connect 17 0 15 0;
+#X connect 21 0 14 0;
+#X coords 0 -1 1 1 415 204 2 100 100;

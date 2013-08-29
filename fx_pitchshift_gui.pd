@@ -1,0 +1,12 @@
+#N canvas 607 205 333 295 10;
+#X obj 103 140 hsl 128 15 -48 48 0 0 /fx/pitchshift/\$1/transpose /fx/pitchshift/\$1/transpose
+transpose 10 8 0 10 -204800 -1 -1 6350 1;
+#X obj 208 115 tgl 25 0 /fx/pitchshift/\$1/state /fx/pitchshift/\$1/state
+empty 17 7 0 10 -4034 -1 -1 0 1;
+#X text 71 238 (c)2013 Marian Weger;
+#X text 59 39 fx_pitchshift_gui <name>;
+#X obj 154 126 nbx 5 14 0 1e+37 0 0 /fx/pitchshift/\$1/window /fx/pitchshift/\$1/window
+window 0 -8 0 10 -262144 -1 -1 1024 256;
+#X obj 100 126 nbx 5 14 -1e+07 99999 0 0 /fx/pitchshift/\$1/transpose
+/fx/pitchshift/\$1/transpose empty 0 -8 0 10 -204800 -1 -1 0 256;
+#X coords 0 -1 1 1 133 55 1 100 100;

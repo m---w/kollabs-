@@ -1,0 +1,12 @@
+#N canvas 512 334 450 300 10;
+#X obj 117 63 inlet~;
+#X obj 117 85 env~ 4096 2048;
+#X obj 117 107 - 100;
+#X text 73 196 (c)2013 Marian Weger;
+#X obj 277 63 inlet;
+#X obj 277 129 outlet;
+#X obj 117 129 outlet;
+#X text 33 28 vu_rms~;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 6 0;

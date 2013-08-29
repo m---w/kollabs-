@@ -1,0 +1,12 @@
+#N canvas 205 65 470 358 10;
+#X obj 49 83 inlet~;
+#X text 38 250 (c)2012 Marian Weger;
+#X obj 198 90 inlet;
+#X obj 198 290 outlet;
+#X obj 55 291 outlet;
+#X text 77 42 available types: rms \, peak;
+#X text 26 11 an_vu~ <name> <domain> <type> (<arg1> <arg2> ...);
+#X obj 49 185 s /an/vu/\$1/1;
+#X obj 49 122 an_vu_\$3~ \$4;
+#X connect 0 0 8 0;
+#X connect 8 0 7 0;

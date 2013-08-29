@@ -1,0 +1,5 @@
+#N canvas 543 212 183 285 10;
+#X obj 54 66 c2s~ \$1/1;
+#X obj 54 88 c2s~ \$1/2;
+#X text 20 144 (c)2012 Marian Weger;
+#X text 35 24 c2s_2~ <name>;

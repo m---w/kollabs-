@@ -1,0 +1,24 @@
+#N canvas 194 69 534 342 10;
+#X obj 20 52 inlet~;
+#X obj 20 201 outlet~;
+#X text 108 257 (c)2012 Marian Weger;
+#X obj 368 246 outlet statelist;
+#X obj 383 194 switch~;
+#X obj 87 52 inlet statelist;
+#X obj 368 223 change 1;
+#X obj 213 52 inlet~;
+#X obj 20 151 mix_\$3~ \$4 \$5 \$6 \$7 \$8 \$9;
+#X obj 167 119 mix_\$3_ctl \$1 \$2 \$4 \$5 \$6 \$7 \$8 \$9;
+#X obj 277 52 inlet statelist;
+#X text 20 23 pipe_mix~ <name> <domain> <type> (<arg1> <arg2> ...)
+;
+#X connect 0 0 8 0;
+#X connect 5 0 9 0;
+#X connect 6 0 3 0;
+#X connect 7 0 8 1;
+#X connect 8 0 1 0;
+#X connect 9 0 8 2;
+#X connect 9 1 4 0;
+#X connect 9 1 6 0;
+#X connect 10 0 9 1;
+#X coords 0 342 1 341 85 60 0;

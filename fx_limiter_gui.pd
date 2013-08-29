@@ -1,0 +1,59 @@
+#N canvas 595 108 411 339 10;
+#X text 75 263 (c)2012 Marian Weger;
+#N canvas 942 265 152 228 \$0-limiter 0;
+#X obj -7 1 cnv 15 140 210 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 9 60 nbx 3 14 0 999 0 0 /fx/limiter/\$1/1/limit /fx/limiter/\$1/1/limit
+limit 0 -8 0 10 -261682 -1 -1 0 256;
+#X obj 5 7 tgl 14 0 /fx/limiter/\$1/state /fx/limiter/\$1/state state
+17 7 0 10 -4034 -1 -1 0 1;
+#X obj 45 60 nbx 3 14 0 999 0 0 /fx/limiter/\$1/1/hold /fx/limiter/\$1/1/hold
+hold 0 -8 0 10 -261682 -1 -1 0 256;
+#X obj 81 60 nbx 3 14 0 999 0 0 /fx/limiter/\$1/1/release /fx/limiter/\$1/1/release
+release 0 -8 0 10 -261682 -1 -1 0 256;
+#X obj 9 116 nbx 3 14 0 999 0 0 /fx/limiter/\$1/2/limit /fx/limiter/\$1/2/limit
+limit 0 -8 0 10 -261682 -1 -1 0 256;
+#X obj 45 116 nbx 3 14 0 999 0 0 /fx/limiter/\$1/2/hold /fx/limiter/\$1/2/hold
+hold 0 -8 0 10 -261682 -1 -1 0 256;
+#X obj 81 116 nbx 3 14 0 999 0 0 /fx/limiter/\$1/2/release /fx/limiter/\$1/2/release
+release 0 -8 0 10 -261682 -1 -1 0 256;
+#X obj 9 148 vradio 15 1 0 2 /fx/limiter/\$1/2/mode /fx/limiter/\$1/2/mode
+empty 0 -8 0 10 -261682 -1 -1 0;
+#X text 25 147 limiter;
+#X text 25 163 compressor;
+#X text -6 26 LIMITER 1:;
+#X text -5 82 LIMITER 2:;
+#X text 79 130 ratio;
+#X text 43 130 tresh;
+#X obj 9 188 nbx 3 14 0 999 0 0 /fx/limiter/\$1/lookahead /fx/limiter/\$1/lookahead
+lookahead 40 8 0 10 -261682 -1 -1 0 256;
+#X restore 150 189 pd \$0-limiter;
+#X obj 150 100 bng 14 250 50 0 empty empty empty 17 7 0 10 -261681
+-1 -1;
+#X obj 150 160 s pd-\$0-limiter;
+#X msg 150 140 vis 1;
+#X obj 100 100 tgl 14 0 /fx/limiter/\$1/state /fx/limiter/\$1/state
+L 4 7 0 10 -261681 -261681 -1 0 1;
+#X obj 114 100 nbx 3 14 0 999 0 0 /fx/limiter/\$1/1/limit /fx/limiter/\$1/1/limit
+empty 0 -8 0 10 -261681 -1 -1 0 256;
+#X obj 263 100 sel 0 1;
+#X msg 263 150 color \$1 \$1 22;
+#X msg 263 122 4;
+#X msg 293 122 14;
+#X msg 273 180 color \$1 22 22;
+#X text 42 23 fx_limiter_gui <name>;
+#X text 93 52 gui for [fx_limiter~];
+#X obj 263 78 r /fx/limiter/\$1/state;
+#X connect 2 0 4 0;
+#X connect 4 0 3 0;
+#X connect 7 0 9 0;
+#X connect 7 1 10 0;
+#X connect 8 0 5 0;
+#X connect 9 0 8 0;
+#X connect 9 0 11 0;
+#X connect 10 0 8 0;
+#X connect 10 0 11 0;
+#X connect 11 0 2 0;
+#X connect 11 0 6 0;
+#X connect 14 0 7 0;
+#X coords 0 -1 1 1 64 14 2 100 100;

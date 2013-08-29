@@ -1,0 +1,52 @@
+#N canvas 770 40 424 441 10;
+#X text 89 366 (c)2012 Marian Weger;
+#X obj 101 101 cnv 13 62 216 empty \$0-label \$1 2 7 0 10 -262144 -1
+0;
+#X obj 100 173 vsl 23 128 0 1.27 0 0 /fx/vol/cs/\$1 /fx/vol/cs/\$1
+empty 0 -9 0 10 -262144 -1 -1 0 1;
+#X obj 100 304 nbx 3 14 -100 24 0 0 /fx/vol/cs/\$1/db /fx/vol/cs/\$1/db
+empty 0 -8 0 10 -262144 -1 -1 0 256;
+#X obj 100 115 nbx 3 14 -99 999 0 0 /fx/gain/cs/\$1 /fx/gain/cs/\$1
+empty 0 -8 0 10 -262144 -1 -1 0 256;
+#X obj 150 173 vsl 14 128 0 1 0 0 /fx/vol/cs/\$1/send /fx/vol/cs/\$1/send
+empty 0 -9 0 10 -262144 -1 -1 0 1;
+#X obj 150 157 tgl 14 0 /mix/mux/cs/\$1/send /mix/mux/cs/\$1/send p
+4 7 0 10 -262144 -1 -1 0 1;
+#X obj 150 304 tgl 14 0 /fx/state/cs/\$1/monitor /fx/state/cs/\$1/monitor
+empty 17 7 0 10 -257985 -1 -1 0 1;
+#X obj 136 304 tgl 14 0 /mix/mux/cs/\$1/monitor /mix/mux/cs/\$1/monitor
+p 4 7 0 10 -257985 -1 -1 0 1;
+#X obj 150 115 tgl 14 0 /cs/\$1/state /cs/\$1/state empty 17 7 0 10
+-225271 -225271 -1 0 1;
+#X obj 100 143 fx_limiter_gui cs/\$1;
+#X obj 100 157 fx_eq7_gui cs/\$1;
+#X obj 100 129 fx_gate_gui cs/\$1;
+#X obj 136 115 fx_mute_gui cs/\$1;
+#X obj 123 171 an_vu_gui cs/\$1;
+#X obj 135 270 tgl 15 0 /mix/mux/cs/\$1/vu /mix/mux/cs/\$1/vu pr 2
+-7 0 10 -261682 -1 -1 0 1;
+#X obj 262 109 loadbang;
+#X obj 262 131 f \$2;
+#X obj 262 175 s \$0-label;
+#X msg 262 153 color \$1 22 22;
+#X obj 295 253 sel 0 1;
+#X msg 295 303 color \$1 \$1 22;
+#X msg 295 275 6;
+#X msg 325 275 16;
+#X obj 295 231 r /cs/\$1/state;
+#X text 45 31 cs_full_gui <name> (<label color>);
+#X connect 16 0 17 0;
+#X connect 17 0 19 0;
+#X connect 19 0 18 0;
+#X connect 19 0 6 0;
+#X connect 19 0 4 0;
+#X connect 19 0 2 0;
+#X connect 19 0 3 0;
+#X connect 19 0 5 0;
+#X connect 20 0 22 0;
+#X connect 20 1 23 0;
+#X connect 21 0 9 0;
+#X connect 22 0 21 0;
+#X connect 23 0 21 0;
+#X connect 24 0 20 0;
+#X coords 0 -1 1 1 64 218 2 100 100;

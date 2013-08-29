@@ -1,0 +1,93 @@
+#N canvas 535 182 522 386 10;
+#X text 98 254 (c)2012 Marian Weger;
+#X obj 100 100 tgl 14 0 /fx/eq7/\$1/state /fx/eq7/\$1/state E 4 7 0
+10 -225280 -225280 -1 0 1;
+#X obj 114 100 bng 14 250 50 0 empty empty empty 17 7 0 10 -225280
+-1 -1;
+#X msg 119 150 vis 1;
+#X obj 263 100 sel 0 1;
+#X msg 263 150 color \$1 \$1 22;
+#X msg 273 180 color \$1 22 22;
+#X msg 263 122 7;
+#X msg 293 122 17;
+#X obj 119 170 s pd-\$0-eq;
+#N canvas 945 88 185 154 \$0-eq 0;
+#X obj 1 -9 cnv 15 165 120 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X text 3 94 LC;
+#X text 3 76 LS;
+#X text 3 58 L;
+#X text 3 44 M;
+#X text 3 30 H;
+#X text 3 -6 HC;
+#X obj 149 -7 tgl 15 0 /fx/eq7/\$1/state /fx/eq7/\$1/state empty 17
+7 0 10 -4034 -1 -1 0 1;
+#X text 3 12 HS;
+#X obj 37 -6 nbx 5 14 20 20000 1 0 /fx/eq7/\$1/hc/f /fx/eq7/\$1/hc/f
+empty 0 -8 0 10 -204800 -1 -1 20000 256;
+#X obj 91 -6 nbx 3 14 0 50 0 0 /fx/eq7/\$1/hc/q /fx/eq7/\$1/hc/q empty
+0 -8 0 10 -204800 -1 -1 1 256;
+#X obj 23 -6 tgl 14 0 /fx/eq7/\$1/hc/state /fx/eq7/\$1/hc/state empty
+17 7 0 10 -204800 -1 -1 0 1;
+#X obj 127 12 nbx 3 14 -99 99 0 0 /fx/eq7/\$1/hs/gain /fx/eq7/\$1/hs/gain
+empty 0 -8 0 10 -204800 -1 -1 0 256;
+#X obj 37 12 nbx 5 14 20 20000 1 0 /fx/eq7/\$1/hs/f /fx/eq7/\$1/hs/f
+empty 0 -8 0 10 -204800 -1 -1 2000 256;
+#X obj 91 12 nbx 3 14 0 50 0 0 /fx/eq7/\$1/hs/q /fx/eq7/\$1/hs/q empty
+0 -8 0 10 -204800 -1 -1 1 256;
+#X obj 23 12 tgl 14 0 /fx/eq7/\$1/hs/state /fx/eq7/\$1/hs/state empty
+17 7 0 10 -204800 -1 -1 0 1;
+#X obj 127 30 nbx 3 14 -99 99 0 0 /fx/eq7/\$1/high/gain /fx/eq7/\$1/high/gain
+empty 0 -8 0 10 -204800 -1 -1 0 256;
+#X obj 37 30 nbx 5 14 20 20000 1 0 /fx/eq7/\$1/high/f /fx/eq7/\$1/high/f
+empty 0 -8 0 10 -204800 -1 -1 5000 256;
+#X obj 91 30 nbx 3 14 0 50 0 0 /fx/eq7/\$1/high/q /fx/eq7/\$1/high/q
+empty 0 -8 0 10 -204800 -1 -1 1 256;
+#X obj 23 30 tgl 14 0 /fx/eq7/\$1/high/state /fx/eq7/\$1/high/state
+empty 17 7 0 10 -204800 -1 -1 0 1;
+#X obj 127 44 nbx 3 14 -99 99 0 0 /fx/eq7/\$1/mid/gain /fx/eq7/\$1/mid/gain
+empty 0 -8 0 10 -204800 -1 -1 0 256;
+#X obj 37 44 nbx 5 14 20 20000 1 0 /fx/eq7/\$1/mid/f /fx/eq7/\$1/mid/f
+empty 0 -8 0 10 -204800 -1 -1 500 256;
+#X obj 91 44 nbx 3 14 0 50 0 0 /fx/eq7/\$1/mid/q /fx/eq7/\$1/mid/q
+empty 0 -8 0 10 -204800 -1 -1 1 256;
+#X obj 23 44 tgl 14 0 /fx/eq7/\$1/mid/state /fx/eq7/\$1/mid/state empty
+17 7 0 10 -204800 -1 -1 0 1;
+#X obj 127 58 nbx 3 14 -99 99 0 0 /fx/eq7/\$1/low/gain /fx/eq7/\$1/low/gain
+empty 0 -8 0 10 -204800 -1 -1 0 256;
+#X obj 37 58 nbx 5 14 20 20000 1 0 /fx/eq7/\$1/low/f /fx/eq7/\$1/low/f
+empty 0 -8 0 10 -204800 -1 -1 100 256;
+#X obj 91 58 nbx 3 14 0 50 0 0 /fx/eq7/\$1/low/q /fx/eq7/\$1/low/q
+empty 0 -8 0 10 -204800 -1 -1 1 256;
+#X obj 23 58 tgl 14 0 /fx/eq7/\$1/low/state /fx/eq7/\$1/low/state empty
+17 7 0 10 -204800 -1 -1 0 1;
+#X obj 127 76 nbx 3 14 -99 99 0 0 /fx/eq7/\$1/ls/gain /fx/eq7/\$1/ls/gain
+empty 0 -8 0 10 -204800 -1 -1 0 256;
+#X obj 37 76 nbx 5 14 20 20000 1 0 /fx/eq7/\$1/ls/f /fx/eq7/\$1/ls/f
+empty 0 -8 0 10 -204800 -1 -1 500 256;
+#X obj 91 76 nbx 3 14 0 50 0 0 /fx/eq7/\$1/ls/q /fx/eq7/\$1/ls/q empty
+0 -8 0 10 -204800 -1 -1 1 256;
+#X obj 23 76 tgl 14 0 /fx/eq7/\$1/ls/state /fx/eq7/\$1/ls/state empty
+17 7 0 10 -204800 -1 -1 0 1;
+#X obj 37 94 nbx 5 14 20 20000 1 0 /fx/eq7/\$1/lc/f /fx/eq7/\$1/lc/f
+empty 0 -8 0 10 -204800 -1 -1 50 256;
+#X obj 91 94 nbx 3 14 0 50 0 0 /fx/eq7/\$1/lc/q /fx/eq7/\$1/lc/q empty
+0 -8 0 10 -204800 -1 -1 1 256;
+#X obj 23 94 tgl 14 0 /fx/eq7/\$1/lc/state /fx/eq7/\$1/lc/state empty
+17 7 0 10 -204800 -1 -1 0 1;
+#X restore 256 245 pd \$0-eq;
+#X obj 263 78 r /fx/eq7/\$1/state;
+#X text 42 23 fx_eq7_gui <name>;
+#X text 93 52 gui for [fx_eq7~];
+#X connect 2 0 3 0;
+#X connect 3 0 9 0;
+#X connect 4 0 7 0;
+#X connect 4 1 8 0;
+#X connect 5 0 1 0;
+#X connect 6 0 2 0;
+#X connect 7 0 5 0;
+#X connect 7 0 6 0;
+#X connect 8 0 5 0;
+#X connect 8 0 6 0;
+#X connect 11 0 4 0;
+#X coords 0 -1 1 1 28 14 2 100 100;

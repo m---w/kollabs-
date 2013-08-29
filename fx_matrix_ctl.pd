@@ -1,0 +1,11 @@
+#N canvas 205 33 536 425 10;
+#X text 288 361 (c)2012 Marian Weger;
+#X obj 60 131 inlet statelist;
+#X obj 298 305 outlet statelist;
+#X obj 60 314 outlet;
+#X text 40 12 fx_matrix_ctl <name> <domain> <channel quantity> <type>
+;
+#X obj 60 238 fx_matrix_\$3_ctl \$1 \$2 \$4;
+#X connect 1 0 5 0;
+#X connect 5 0 3 0;
+#X connect 5 1 2 0;

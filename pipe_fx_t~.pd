@@ -1,0 +1,27 @@
+#N canvas 819 22 607 391 10;
+#X obj 10 76 inlet~;
+#X text 92 251 (c)2012 Marian Weger;
+#X obj 328 270 outlet statelist;
+#X obj 343 218 switch~;
+#X obj 151 76 inlet statelist;
+#X obj 328 247 change 1;
+#X obj 338 155 t b f;
+#X obj 328 185 && 1;
+#X obj 151 113 fx_\$4_ctl \$1 \$2 \$5 \$6 \$7 \$8 \$9;
+#X obj 29 284 outlet;
+#X obj 10 145 fx_\$4~ \$5 \$6 \$7 \$8 \$9;
+#X text 10 17 pipe_fx_throw~ <name> <domain> <target> <fx> (<arg1>
+<arg2> ...);
+#X obj 10 195 throw~ \$3;
+#X connect 0 0 10 0;
+#X connect 4 0 8 0;
+#X connect 5 0 2 0;
+#X connect 6 0 7 0;
+#X connect 6 1 7 1;
+#X connect 7 0 5 0;
+#X connect 7 0 3 0;
+#X connect 8 0 10 1;
+#X connect 8 1 7 0;
+#X connect 10 0 12 0;
+#X connect 10 1 6 0;
+#X coords 0 391 1 390 85 60 0;

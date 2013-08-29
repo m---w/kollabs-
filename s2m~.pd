@@ -1,0 +1,10 @@
+#N canvas 639 204 310 281 10;
+#X text 20 224 (c)2012 Marian Weger;
+#X text 35 24 s2m~;
+#X obj 24 71 inlet~ left;
+#X obj 104 71 inlet~ right;
+#X obj 24 175 outlet~ mono;
+#X obj 24 143 *~ 0.707946;
+#X connect 2 0 5 0;
+#X connect 3 0 5 0;
+#X connect 5 0 4 0;

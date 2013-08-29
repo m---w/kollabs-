@@ -1,0 +1,6 @@
+#N canvas 549 302 239 227 10;
+#X obj 73 81 catch~ \$1;
+#X text 63 183 2012 Marian Weger;
+#X text 42 25 c2s~ <name>;
+#X obj 73 103 send~ \$1;
+#X connect 0 0 3 0;

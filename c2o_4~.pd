@@ -1,0 +1,15 @@
+#N canvas 428 320 327 228 10;
+#X text 63 183 2013 Marian Weger;
+#X obj 73 113 outlet~;
+#X obj 123 113 outlet~;
+#X obj 73 61 catch~ \$1/1;
+#X obj 123 81 catch~ \$1/2;
+#X text 42 25 c2o_4~ <name>;
+#X obj 173 113 outlet~;
+#X obj 223 113 outlet~;
+#X obj 173 61 catch~ \$1/3;
+#X obj 223 81 catch~ \$1/4;
+#X connect 3 0 1 0;
+#X connect 4 0 2 0;
+#X connect 8 0 6 0;
+#X connect 9 0 7 0;

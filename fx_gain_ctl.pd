@@ -1,0 +1,12 @@
+#N canvas 642 192 520 452 10;
+#X obj 205 253 outlet statelist;
+#X obj 70 258 outlet ctl;
+#X obj 70 113 inlet statelist;
+#X text 123 316 (c)2012 Marian Weger;
+#X obj 70 202 fx_gain_ctl_\$3 \$1 \$2 \$4;
+#X text 327 109 AVAILABLE TYPES \; gain \; vol \; mute \; phase \;
+;
+#X text 23 23 fx_gain_ctl <name> <domain> <type> (<init value>);
+#X connect 2 0 4 0;
+#X connect 4 0 1 0;
+#X connect 4 1 0 0;

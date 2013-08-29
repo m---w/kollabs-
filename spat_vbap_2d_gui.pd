@@ -1,0 +1,8 @@
+#N canvas 792 150 333 295 10;
+#X obj 103 115 hsl 128 15 0 360 0 0 /spat/vbap/\$1/az /spat/vbap/\$1/az
+azimuth 10 8 0 10 -204786 -1 -1 0 1;
+#X text 71 238 (c)2013 Marian Weger;
+#X obj 103 130 hsl 128 15 -48 48 0 0 /spat/vbap/\$1/spread /spat/vbap/\$1/spread
+spread 10 8 0 10 -261682 -1 -1 0 1;
+#X text 59 39 spat_vbap_2d_gui <name>;
+#X coords 0 -1 1 1 133 45 1 100 100;

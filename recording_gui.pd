@@ -1,0 +1,8 @@
+#N canvas 407 244 317 282 10;
+#X obj 101 115 cnv 15 98 34 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 108 122 tgl 20 0 /recording/state /recording/state REC 24 10
+0 14 -258113 -1 -1 0 1;
+#X text 118 230 (c)2012 Marian Weger;
+#X text 63 49 recording_gui;
+#X coords 0 -1 1 1 100 50 1 100 100;

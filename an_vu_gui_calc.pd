@@ -1,0 +1,13 @@
+#N canvas 693 269 337 219 10;
+#X obj 85 83 db2fader;
+#X obj 85 41 r /an/vu/\$2/\$3;
+#X obj 85 129 s \$1-vu-\$3;
+#X obj 176 83 s \$1-clip-sum;
+#X text 22 12 an_vu_gui_calc <\$0> <\$1> <id>;
+#X text 84 175 (c)2013 Marian Weger;
+#X obj 85 105 msg_decay 2000 90;
+#X connect 0 0 6 0;
+#X connect 1 0 0 0;
+#X connect 1 0 3 0;
+#X connect 6 0 2 0;
+#X coords 0 219 1 218 85 60 0;

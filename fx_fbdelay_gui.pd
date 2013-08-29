@@ -1,0 +1,30 @@
+#N canvas 607 205 333 295 10;
+#X text 71 238 (c)2012 Marian Weger;
+#X text 59 39 fx_fbdelay_gui <name>;
+#X obj 101 115 cnv 15 103 87 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 103 178 hsl 128 15 0 1 0 0 /fx/fbdelay/\$1/fb /fx/fbdelay/\$1/fb
+feedback 10 8 0 10 -232576 -1 -1 11430 1;
+#X obj 103 163 hsl 128 15 0 1 0 0 /fx/fbdelay/\$1/send /fx/fbdelay/\$1/send
+send 10 8 0 10 -261234 -1 -1 12700 1;
+#X obj 103 193 hsl 128 15 0 1 0 0 /fx/fbdelay/\$1/dry /fx/fbdelay/\$1/dry
+dry 10 8 0 10 -204786 -1 -1 12700 1;
+#X obj 103 208 hsl 128 15 0 1 0 0 /fx/fbdelay/\$1/wet /fx/fbdelay/\$1/wet
+wet 10 8 0 10 -203904 -1 -1 12700 1;
+#X obj 205 115 tgl 28 0 /fx/fbdelay/\$1/state /fx/fbdelay/\$1/state
+empty 17 7 0 10 -4034 -1 -1 0 1;
+#X obj 151 115 nbx 5 14 0 99999 0 0 /fx/fbdelay/\$1/delay /fx/fbdelay/\$1/delay
+del -20 8 0 10 -260097 -1 -1 400 256;
+#X obj 101 129 tgl 14 0 /fx/fbdelay/\$1/hc/state /fx/fbdelay/\$1/hc/state
+HC 1 -6 0 10 -204800 -1 -1 1 1;
+#X obj 115 129 nbx 5 14 -1e+37 1e+37 0 0 /fx/fbdelay/\$1/hc/f /fx/fbdelay/\$1/hc/f
+empty 0 -8 0 10 -204800 -1 -1 3000 256;
+#X obj 169 129 nbx 3 14 -1e+37 1e+37 0 0 /fx/fbdelay/\$1/hc/q /fx/fbdelay/\$1/hc/q
+empty 0 -8 0 10 -204800 -1 -1 1 256;
+#X obj 100 149 tgl 14 0 /fx/fbdelay/\$1/lc/state /fx/fbdelay/\$1/lc/state
+empty 1 -6 0 10 -204800 -1 -1 0 1;
+#X obj 114 149 nbx 5 14 -1e+37 1e+37 0 0 /fx/fbdelay/\$1/lc/f /fx/fbdelay/\$1/lc/f
+empty 0 -8 0 10 -204800 -1 -1 3000 256;
+#X obj 168 149 nbx 3 14 -1e+37 1e+37 0 0 /fx/fbdelay/\$1/lc/q /fx/fbdelay/\$1/lc/q
+empty 0 -8 0 10 -204800 -1 -1 1 256;
+#X coords 0 -1 1 1 133 123 1 100 100;

@@ -1,0 +1,9 @@
+#N canvas 66 235 272 231 10;
+#X obj 73 81 inlet~;
+#X text 63 183 2013 Marian Weger;
+#X obj 123 81 inlet~;
+#X obj 73 123 throw~ \$1/1;
+#X obj 123 103 throw~ \$1/2;
+#X text 42 25 i2t_2~ <name>;
+#X connect 0 0 3 0;
+#X connect 2 0 4 0;

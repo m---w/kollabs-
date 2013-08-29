@@ -1,0 +1,11 @@
+#N canvas 537 181 311 261 10;
+#X text 103 178 (c)2012 Marian Weger;
+#X text 93 52 gui for [fx_biquad~];
+#X obj 114 100 nbx 5 14 20 20000 1 0 /fx/biquad/\$1/f /fx/biquad/\$1/f
+empty 0 -8 0 10 -204800 -1 -1 20 256;
+#X obj 168 100 nbx 3 14 0 50 0 0 /fx/biquad/\$1/q /fx/biquad/\$1/q
+empty 0 -8 0 10 -204800 -1 -1 0 256;
+#X obj 100 100 tgl 14 0 /fx/biquad/\$1/state /fx/biquad/\$1/state empty
+17 7 0 10 -204800 -1 -1 0 1;
+#X text 42 23 fx_biquad_gui_2 <name>;
+#X coords 0 -1 1 1 104 14 2 100 100;

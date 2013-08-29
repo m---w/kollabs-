@@ -1,0 +1,9 @@
+#N canvas 537 181 423 257 10;
+#X text 103 178 (c)2012 Marian Weger;
+#X obj 114 100 nbx 5 14 20 20000 1 0 /cs/\$1/hip/f /cs/\$1/hip/f empty
+0 -8 0 10 -204800 -1 -1 20 256;
+#X obj 100 100 tgl 14 0 /cs/\$1/hip/state /cs/\$1/hip/state empty 17
+7 0 10 -204800 -1 -1 0 1;
+#X text 42 23 cs_hip_gui <name> <domain>;
+#X text 93 52 gui for [cs_hip~];
+#X coords 0 -1 1 1 68 14 2 100 100;
