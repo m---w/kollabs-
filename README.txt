@@ -1,6 +1,6 @@
-========
-KOLLABS~
-========
+=====
+KOMIX
+=====
 
 Pure Data abstraction library for realtime sound processing.
 
@@ -13,7 +13,7 @@ This library is still in development status, and not documented yet.
 Source
 ------
 
-https://github.com/m---w/kollabs-
+https://github.com/m---w/komix
 
 
 Copyright/License
