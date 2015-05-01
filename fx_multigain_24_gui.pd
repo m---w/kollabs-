@@ -1,13 +1,13 @@
-#N canvas 535 182 522 386 10;
+#N canvas 525 172 522 386 10;
 #X text 98 254 (c)2012 Marian Weger;
 #X obj 100 100 bng 14 250 50 0 empty empty gain_correction 16 7 0 10
 -262144 -1 -1;
 #X msg 119 150 vis 1;
 #X text 42 23 fx_multigain_24_gui <name>;
 #X text 93 52 gui for [fx_multigain_24~];
-#N canvas 591 125 357 179 \$0-gain 1;
+#N canvas 583 117 353 171 \$0-gain 0;
 #X obj 39 27 nbx 3 14 -99 99 0 0 /fx/gain/\$1/1 /fx/gain/\$1/1 1 0
--8 0 10 -262144 -1 -1 -99 256;
+-8 0 10 -262144 -1 -1 0 256;
 #X obj 75 27 nbx 3 14 -99 99 0 0 /fx/gain/\$1/2 /fx/gain/\$1/2 2 0
 -8 0 10 -262144 -1 -1 0 256;
 #X obj 111 27 nbx 3 14 -99 99 0 0 /fx/gain/\$1/3 /fx/gain/\$1/3 3 0
@@ -58,4 +58,4 @@
 #X obj 119 170 s pd-\$0-gain;
 #X connect 1 0 2 0;
 #X connect 2 0 6 0;
-#X coords 0 -1 1 1 107 14 2 100 100;
+#X coords 0 386 1 385 107 14 2 100 100;

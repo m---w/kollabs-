@@ -1,0 +1,355 @@
+#N canvas 0 51 1366 691 10;
+#X obj 34 37 inlet~;
+#X obj 34 649 outlet~;
+#X obj 84 37 inlet~;
+#X obj 84 649 outlet~;
+#X obj 134 37 inlet~;
+#X obj 134 649 outlet~;
+#X obj 184 37 inlet~;
+#X obj 184 649 outlet~;
+#X obj 234 37 inlet~;
+#X obj 234 649 outlet~;
+#X obj 284 37 inlet~;
+#X obj 284 649 outlet~;
+#X obj 334 37 inlet~;
+#X obj 334 649 outlet~;
+#X obj 384 37 inlet~;
+#X obj 384 649 outlet~;
+#X obj 2629 266 outlet;
+#X obj 2483 37 inlet;
+#X obj 2560 216 switch~;
+#X obj 2560 130 1del0 15;
+#X obj 434 37 inlet~;
+#X obj 434 649 outlet~;
+#X obj 484 37 inlet~;
+#X obj 484 649 outlet~;
+#X obj 534 37 inlet~;
+#X obj 534 649 outlet~;
+#X obj 584 37 inlet~;
+#X obj 584 649 outlet~;
+#X obj 634 37 inlet~;
+#X obj 634 649 outlet~;
+#X obj 684 37 inlet~;
+#X obj 684 649 outlet~;
+#X obj 734 37 inlet~;
+#X obj 734 649 outlet~;
+#X obj 784 37 inlet~;
+#X obj 784 649 outlet~;
+#X obj 834 37 inlet~;
+#X obj 834 649 outlet~;
+#X obj 884 37 inlet~;
+#X obj 884 649 outlet~;
+#X obj 934 37 inlet~;
+#X obj 934 649 outlet~;
+#X obj 984 37 inlet~;
+#X obj 984 649 outlet~;
+#X obj 1034 37 inlet~;
+#X obj 1034 649 outlet~;
+#X obj 1084 37 inlet~;
+#X obj 1084 649 outlet~;
+#X obj 1134 37 inlet~;
+#X obj 1134 649 outlet~;
+#X obj 1184 37 inlet~;
+#X obj 1184 649 outlet~;
+#X obj 2483 75 t f f;
+#X obj 2560 106 change 1;
+#X obj 2626 153 loadbang;
+#X msg 2626 175 1;
+#X obj 34 167 pipe_fx~ \$1/1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11
+\$12;
+#X obj 84 187 pipe_fx~ \$1/2 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11
+\$12;
+#X obj 134 207 pipe_fx~ \$1/3 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 184 227 pipe_fx~ \$1/4 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 234 247 pipe_fx~ \$1/5 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 284 267 pipe_fx~ \$1/6 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 334 287 pipe_fx~ \$1/7 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 384 307 pipe_fx~ \$1/8 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 434 327 pipe_fx~ \$1/9 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 484 347 pipe_fx~ \$1/10 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 534 367 pipe_fx~ \$1/11 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 584 387 pipe_fx~ \$1/12 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 634 407 pipe_fx~ \$1/13 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 684 427 pipe_fx~ \$1/14 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 734 447 pipe_fx~ \$1/15 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 784 467 pipe_fx~ \$1/16 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 834 487 pipe_fx~ \$1/17 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 884 507 pipe_fx~ \$1/18 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 934 527 pipe_fx~ \$1/19 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 984 547 pipe_fx~ \$1/20 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 1034 567 pipe_fx~ \$1/21 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 1084 587 pipe_fx~ \$1/22 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 1134 607 pipe_fx~ \$1/23 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 1184 627 pipe_fx~ \$1/24 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X text 42 14 pipe_fx_multi_48~ <name> <domain> <fx> (<arg1> <arg2>
+...);
+#X text 69 687 (c)2015 Marian Weger;
+#X obj 1244 37 inlet~;
+#X obj 1244 649 outlet~;
+#X obj 1294 37 inlet~;
+#X obj 1294 649 outlet~;
+#X obj 1344 37 inlet~;
+#X obj 1344 649 outlet~;
+#X obj 1394 37 inlet~;
+#X obj 1394 649 outlet~;
+#X obj 1444 37 inlet~;
+#X obj 1444 649 outlet~;
+#X obj 1494 37 inlet~;
+#X obj 1494 649 outlet~;
+#X obj 1544 37 inlet~;
+#X obj 1544 649 outlet~;
+#X obj 1594 37 inlet~;
+#X obj 1594 649 outlet~;
+#X obj 1644 37 inlet~;
+#X obj 1644 649 outlet~;
+#X obj 1694 37 inlet~;
+#X obj 1694 649 outlet~;
+#X obj 1744 37 inlet~;
+#X obj 1744 649 outlet~;
+#X obj 1794 37 inlet~;
+#X obj 1794 649 outlet~;
+#X obj 1844 37 inlet~;
+#X obj 1844 649 outlet~;
+#X obj 1894 37 inlet~;
+#X obj 1894 649 outlet~;
+#X obj 1944 37 inlet~;
+#X obj 1944 649 outlet~;
+#X obj 1994 37 inlet~;
+#X obj 1994 649 outlet~;
+#X obj 2044 37 inlet~;
+#X obj 2044 649 outlet~;
+#X obj 2094 37 inlet~;
+#X obj 2094 649 outlet~;
+#X obj 2144 37 inlet~;
+#X obj 2144 649 outlet~;
+#X obj 2194 37 inlet~;
+#X obj 2194 649 outlet~;
+#X obj 2244 37 inlet~;
+#X obj 2244 649 outlet~;
+#X obj 2294 37 inlet~;
+#X obj 2294 649 outlet~;
+#X obj 2344 37 inlet~;
+#X obj 2344 649 outlet~;
+#X obj 2394 37 inlet~;
+#X obj 2394 649 outlet~;
+#X obj 1244 167 pipe_fx~ \$1/25 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 1294 187 pipe_fx~ \$1/26 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 1344 207 pipe_fx~ \$1/27 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 1394 227 pipe_fx~ \$1/28 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 1444 247 pipe_fx~ \$1/29 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 1494 267 pipe_fx~ \$1/30 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 1544 287 pipe_fx~ \$1/31 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 1594 307 pipe_fx~ \$1/32 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 1644 327 pipe_fx~ \$1/33 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 1694 347 pipe_fx~ \$1/34 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 1744 367 pipe_fx~ \$1/35 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 1794 387 pipe_fx~ \$1/36 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 1844 407 pipe_fx~ \$1/37 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 1894 427 pipe_fx~ \$1/38 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 1944 447 pipe_fx~ \$1/39 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 1994 467 pipe_fx~ \$1/40 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 2044 487 pipe_fx~ \$1/41 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 2094 507 pipe_fx~ \$1/42 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 2144 527 pipe_fx~ \$1/43 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 2194 547 pipe_fx~ \$1/44 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 2244 567 pipe_fx~ \$1/45 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 2294 587 pipe_fx~ \$1/46 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 2344 607 pipe_fx~ \$1/47 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X obj 2394 627 pipe_fx~ \$1/48 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10
+\$11 \$12;
+#X connect 0 0 56 0;
+#X connect 2 0 57 0;
+#X connect 4 0 58 0;
+#X connect 6 0 59 0;
+#X connect 8 0 60 0;
+#X connect 10 0 61 0;
+#X connect 12 0 62 0;
+#X connect 14 0 63 0;
+#X connect 17 0 52 0;
+#X connect 19 0 18 0;
+#X connect 19 0 16 0;
+#X connect 20 0 64 0;
+#X connect 22 0 65 0;
+#X connect 24 0 66 0;
+#X connect 26 0 67 0;
+#X connect 28 0 68 0;
+#X connect 30 0 69 0;
+#X connect 32 0 70 0;
+#X connect 34 0 71 0;
+#X connect 36 0 72 0;
+#X connect 38 0 73 0;
+#X connect 40 0 74 0;
+#X connect 42 0 75 0;
+#X connect 44 0 76 0;
+#X connect 46 0 77 0;
+#X connect 48 0 78 0;
+#X connect 50 0 79 0;
+#X connect 52 0 56 1;
+#X connect 52 0 57 1;
+#X connect 52 0 58 1;
+#X connect 52 0 59 1;
+#X connect 52 0 60 1;
+#X connect 52 0 61 1;
+#X connect 52 0 62 1;
+#X connect 52 0 63 1;
+#X connect 52 0 64 1;
+#X connect 52 0 65 1;
+#X connect 52 0 66 1;
+#X connect 52 0 67 1;
+#X connect 52 0 68 1;
+#X connect 52 0 69 1;
+#X connect 52 0 70 1;
+#X connect 52 0 71 1;
+#X connect 52 0 72 1;
+#X connect 52 0 73 1;
+#X connect 52 0 74 1;
+#X connect 52 0 75 1;
+#X connect 52 0 76 1;
+#X connect 52 0 77 1;
+#X connect 52 0 78 1;
+#X connect 52 0 79 1;
+#X connect 52 0 130 1;
+#X connect 52 0 131 1;
+#X connect 52 0 132 1;
+#X connect 52 0 133 1;
+#X connect 52 0 134 1;
+#X connect 52 0 135 1;
+#X connect 52 0 136 1;
+#X connect 52 0 137 1;
+#X connect 52 0 138 1;
+#X connect 52 0 139 1;
+#X connect 52 0 140 1;
+#X connect 52 0 141 1;
+#X connect 52 0 142 1;
+#X connect 52 0 143 1;
+#X connect 52 0 144 1;
+#X connect 52 0 145 1;
+#X connect 52 0 146 1;
+#X connect 52 0 147 1;
+#X connect 52 0 148 1;
+#X connect 52 0 149 1;
+#X connect 52 0 150 1;
+#X connect 52 0 151 1;
+#X connect 52 0 152 1;
+#X connect 52 0 153 1;
+#X connect 52 1 53 0;
+#X connect 53 0 19 0;
+#X connect 54 0 55 0;
+#X connect 55 0 18 0;
+#X connect 56 0 1 0;
+#X connect 57 0 3 0;
+#X connect 58 0 5 0;
+#X connect 59 0 7 0;
+#X connect 60 0 9 0;
+#X connect 61 0 11 0;
+#X connect 62 0 13 0;
+#X connect 63 0 15 0;
+#X connect 64 0 21 0;
+#X connect 65 0 23 0;
+#X connect 66 0 25 0;
+#X connect 67 0 27 0;
+#X connect 68 0 29 0;
+#X connect 69 0 31 0;
+#X connect 70 0 33 0;
+#X connect 71 0 35 0;
+#X connect 72 0 37 0;
+#X connect 73 0 39 0;
+#X connect 74 0 41 0;
+#X connect 75 0 43 0;
+#X connect 76 0 45 0;
+#X connect 77 0 47 0;
+#X connect 78 0 49 0;
+#X connect 79 0 51 0;
+#X connect 82 0 130 0;
+#X connect 84 0 131 0;
+#X connect 86 0 132 0;
+#X connect 88 0 133 0;
+#X connect 90 0 134 0;
+#X connect 92 0 135 0;
+#X connect 94 0 136 0;
+#X connect 96 0 137 0;
+#X connect 98 0 138 0;
+#X connect 100 0 139 0;
+#X connect 102 0 140 0;
+#X connect 104 0 141 0;
+#X connect 106 0 142 0;
+#X connect 108 0 143 0;
+#X connect 110 0 144 0;
+#X connect 112 0 145 0;
+#X connect 114 0 146 0;
+#X connect 116 0 147 0;
+#X connect 118 0 148 0;
+#X connect 120 0 149 0;
+#X connect 122 0 150 0;
+#X connect 124 0 151 0;
+#X connect 126 0 152 0;
+#X connect 128 0 153 0;
+#X connect 130 0 83 0;
+#X connect 131 0 85 0;
+#X connect 132 0 87 0;
+#X connect 133 0 89 0;
+#X connect 134 0 91 0;
+#X connect 135 0 93 0;
+#X connect 136 0 95 0;
+#X connect 137 0 97 0;
+#X connect 138 0 99 0;
+#X connect 139 0 101 0;
+#X connect 140 0 103 0;
+#X connect 141 0 105 0;
+#X connect 142 0 107 0;
+#X connect 143 0 109 0;
+#X connect 144 0 111 0;
+#X connect 145 0 113 0;
+#X connect 146 0 115 0;
+#X connect 147 0 117 0;
+#X connect 148 0 119 0;
+#X connect 149 0 121 0;
+#X connect 150 0 123 0;
+#X connect 151 0 125 0;
+#X connect 152 0 127 0;
+#X connect 153 0 129 0;

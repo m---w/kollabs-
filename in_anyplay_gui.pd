@@ -1,9 +1,9 @@
-#N canvas 520 200 333 295 10;
-#X obj 103 128 hsl 128 15 0 10 0 0 /in/anyplay/\$1/speed /in/anyplay/\$1/speed
-speed 10 8 0 10 -204800 -1 -1 2070 1;
+#N canvas 518 198 333 295 10;
+#X obj 103 128 hsl 128 15 0.1 10 1 0 /in/anyplay/\$1/speed /in/anyplay/\$1/speed
+speed 10 8 0 10 -204800 -1 -1 6350 1;
 #X text 71 238 (c)2013 Marian Weger;
 #X obj 100 114 nbx 5 14 0 10 0 0 /in/anyplay/\$1/speed /in/anyplay/\$1/speed
-empty 0 -8 0 10 -204800 -1 -1 1.62992 256;
+empty 0 -8 0 10 -204800 -1 -1 1 256;
 #X obj 179 114 nbx 5 14 0 99999 0 0 /in/anyplay/\$1/timeseek /in/anyplay/\$1/timeseek
 empty 0 -8 0 10 -261234 -1 -1 0 256;
 #X text 59 39 in_anyplay_gui <name>;
@@ -18,9 +18,9 @@ open 17 7 0 10 -262144 -1 -1;
 #X obj 174 170 bng 15 250 50 0 /in/anyplay/\$1/reload /in/anyplay/\$1/reload
 reload 17 7 0 10 -262144 -1 -1;
 #X obj 174 192 tgl 15 0 /in/anyplay/\$1/loop /in/anyplay/\$1/loop loop
-17 7 0 10 -262144 -1 -1 0 1;
+17 7 0 10 -262144 -1 -1 1 1;
 #X obj 158 113 tgl 15 0 /in/anyplay/\$1/ready /in/anyplay/\$1/ready
-empty 17 7 0 10 -262144 -1 -1 1 1;
+empty 17 7 0 10 -262144 -1 -1 0 1;
 #X obj 179 214 nbx 5 14 0 99999 0 0 /in/anyplay/\$1/elapsed /in/anyplay/\$1/elapsed
 empty 0 -8 0 10 -204786 -1 -1 0 256;
 #X obj 109 214 nbx 5 14 0 99999 0 0 /in/anyplay/\$1/length /in/anyplay/\$1/length
