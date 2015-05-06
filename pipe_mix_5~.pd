@@ -1,9 +1,9 @@
-#N canvas 359 43 741 369 10;
+#N canvas 357 51 741 369 10;
 #X obj 20 79 inlet~;
 #X obj 20 298 outlet~;
 #X text 408 216 (c)2012 Marian Weger;
 #X obj 587 273 outlet statelist;
-#X obj 602 221 switch~;
+#X obj 616 226 switch~;
 #X obj 257 79 inlet statelist;
 #X obj 587 250 change 1;
 #X obj 363 79 inlet~;

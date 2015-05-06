@@ -1,4 +1,4 @@
-#N canvas 0 51 1366 691 10;
+#N canvas 1 51 1278 691 10;
 #X obj 2485 180 inlet statelist;
 #X obj 2625 459 outlet statelist;
 #X obj 2639 412 switch~;

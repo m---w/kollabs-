@@ -1,0 +1,100 @@
+#N canvas 510 190 333 295 10;
+#X obj 100 125 tgl 15 0 /fx/state/\$1/1 /fx/state/\$1/1 empty 17 7
+0 10 -262144 -1 -1 0 1;
+#X text 59 39 fx_switchmatrix_48_gui <name>;
+#X text 335 34 (c)2015 Marian Weger;
+#X obj 115 125 tgl 15 0 /fx/state/\$1/2 /fx/state/\$1/2 empty 17 7
+0 10 -262144 -1 -1 0 1;
+#X obj 130 125 tgl 15 0 /fx/state/\$1/3 /fx/state/\$1/3 empty 17 7
+0 10 -262144 -1 -1 0 1;
+#X obj 145 125 tgl 15 0 /fx/state/\$1/4 /fx/state/\$1/4 empty 17 7
+0 10 -262144 -1 -1 0 1;
+#X obj 160 125 tgl 15 0 /fx/state/\$1/5 /fx/state/\$1/5 empty 17 7
+0 10 -262144 -1 -1 0 1;
+#X obj 175 125 tgl 15 0 /fx/state/\$1/6 /fx/state/\$1/6 empty 17 7
+0 10 -262144 -1 -1 0 1;
+#X obj 190 125 tgl 15 0 /fx/state/\$1/7 /fx/state/\$1/7 empty 17 7
+0 10 -262144 -1 -1 0 1;
+#X obj 205 125 tgl 15 0 /fx/state/\$1/8 /fx/state/\$1/8 empty 17 7
+0 10 -262144 -1 -1 0 1;
+#X obj 100 140 tgl 15 0 /fx/state/\$1/9 /fx/state/\$1/9 empty 17 7
+0 10 -262144 -1 -1 0 1;
+#X obj 115 140 tgl 15 0 /fx/state/\$1/10 /fx/state/\$1/10 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 130 140 tgl 15 0 /fx/state/\$1/11 /fx/state/\$1/11 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 145 140 tgl 15 0 /fx/state/\$1/12 /fx/state/\$1/12 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 160 140 tgl 15 0 /fx/state/\$1/13 /fx/state/\$1/13 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 175 140 tgl 15 0 /fx/state/\$1/14 /fx/state/\$1/14 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 190 140 tgl 15 0 /fx/state/\$1/15 /fx/state/\$1/15 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 205 140 tgl 15 0 /fx/state/\$1/16 /fx/state/\$1/16 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 100 155 tgl 15 0 /fx/state/\$1/17 /fx/state/\$1/17 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 115 155 tgl 15 0 /fx/state/\$1/18 /fx/state/\$1/18 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 130 155 tgl 15 0 /fx/state/\$1/19 /fx/state/\$1/19 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 145 155 tgl 15 0 /fx/state/\$1/20 /fx/state/\$1/20 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 160 155 tgl 15 0 /fx/state/\$1/21 /fx/state/\$1/21 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 175 155 tgl 15 0 /fx/state/\$1/22 /fx/state/\$1/22 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 190 155 tgl 15 0 /fx/state/\$1/23 /fx/state/\$1/23 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 205 155 tgl 15 0 /fx/state/\$1/24 /fx/state/\$1/24 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 100 170 tgl 15 0 /fx/state/\$1/25 /fx/state/\$1/25 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 115 170 tgl 15 0 /fx/state/\$1/26 /fx/state/\$1/26 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 130 170 tgl 15 0 /fx/state/\$1/27 /fx/state/\$1/27 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 145 170 tgl 15 0 /fx/state/\$1/28 /fx/state/\$1/28 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 160 170 tgl 15 0 /fx/state/\$1/29 /fx/state/\$1/29 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 175 170 tgl 15 0 /fx/state/\$1/30 /fx/state/\$1/30 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 190 170 tgl 15 0 /fx/state/\$1/31 /fx/state/\$1/31 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 205 170 tgl 15 0 /fx/state/\$1/32 /fx/state/\$1/32 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 100 185 tgl 15 0 /fx/state/\$1/33 /fx/state/\$1/33 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 115 185 tgl 15 0 /fx/state/\$1/34 /fx/state/\$1/34 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 130 185 tgl 15 0 /fx/state/\$1/35 /fx/state/\$1/35 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 145 185 tgl 15 0 /fx/state/\$1/36 /fx/state/\$1/36 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 160 185 tgl 15 0 /fx/state/\$1/37 /fx/state/\$1/37 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 175 185 tgl 15 0 /fx/state/\$1/38 /fx/state/\$1/38 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 190 185 tgl 15 0 /fx/state/\$1/39 /fx/state/\$1/39 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 205 185 tgl 15 0 /fx/state/\$1/40 /fx/state/\$1/40 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 100 200 tgl 15 0 /fx/state/\$1/41 /fx/state/\$1/41 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 115 200 tgl 15 0 /fx/state/\$1/42 /fx/state/\$1/42 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 130 200 tgl 15 0 /fx/state/\$1/43 /fx/state/\$1/43 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 145 200 tgl 15 0 /fx/state/\$1/44 /fx/state/\$1/44 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 160 200 tgl 15 0 /fx/state/\$1/45 /fx/state/\$1/45 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 175 200 tgl 15 0 /fx/state/\$1/46 /fx/state/\$1/46 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 190 200 tgl 15 0 /fx/state/\$1/47 /fx/state/\$1/47 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 205 200 tgl 15 0 /fx/state/\$1/48 /fx/state/\$1/48 empty 17
+7 0 10 -262144 -1 -1 0 1;
+#X coords 0 -1 1 1 120 120 1 100 100;
