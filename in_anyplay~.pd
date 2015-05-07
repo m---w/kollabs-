@@ -1,4 +1,4 @@
-#N canvas 41 70 905 660 10;
+#N canvas 264 176 905 660 10;
 #X msg 478 134 play;
 #X obj 12 47 openpanel;
 #X obj 217 427 route ready samplerate length cache float bang;
