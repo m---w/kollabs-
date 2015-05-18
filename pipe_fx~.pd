@@ -1,4 +1,4 @@
-#N canvas 254 51 545 374 10;
+#N canvas 254 73 545 374 10;
 #X obj 20 136 inlet~;
 #X obj 20 255 outlet~;
 #X text 102 311 (c)2012 Marian Weger;
