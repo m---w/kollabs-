@@ -1,4 +1,4 @@
-#N canvas 366 345 706 542 10;
+#N canvas 366 355 706 542 10;
 #X obj 62 82 inlet;
 #X obj 255 515 outlet~;
 #X obj 255 490 *~;
@@ -16,7 +16,7 @@
 #X text 651 197 grrrr.org 2012;
 #X obj 333 110 list split 1;
 #X obj 484 241 t b a;
-#N canvas 761 452 291 306 ramp 0;
+#N canvas 761 548 291 306 ramp 0;
 #X obj 38 74 inlet;
 #X obj 137 74 inlet;
 #X obj 38 224 outlet~;
@@ -37,7 +37,7 @@
 #X obj 367 136 unpack 0 0;
 #X obj 399 276 pack \$2 0 0;
 #X obj 484 276 pack 0 0 0;
-#X obj 120 191 upp.s2ms;
+#X obj 122 214 upp.s2ms;
 #X obj 456 136 upp.s2ms;
 #X obj 255 445 vd~ \$3;
 #X obj 319 360 upp.s2ms;
@@ -46,6 +46,10 @@
 #X obj 94 285 +;
 #X text 59 8 sample_buffer playpos(ms) delay(samples) attack(ms) sustain(ms)
 release(ms) speed, f 83;
+#X obj 122 188 max 0;
+#X obj 122 253 *;
+#X obj 176 244 - 1;
+#X obj 176 266 * -1;
 #X connect 0 0 18 0;
 #X connect 2 0 1 0;
 #X connect 4 1 28 0;
@@ -67,13 +71,19 @@ release(ms) speed, f 83;
 #X connect 21 0 7 0;
 #X connect 22 0 7 0;
 #X connect 23 0 16 0;
-#X connect 23 0 29 1;
+#X connect 23 0 32 0;
 #X connect 24 0 14 0;
 #X connect 25 0 2 0;
 #X connect 26 0 15 1;
 #X connect 27 0 25 0;
 #X connect 28 0 29 0;
-#X connect 28 1 23 0;
+#X connect 28 1 31 0;
 #X connect 28 2 21 1;
 #X connect 28 5 26 0;
+#X connect 28 5 33 0;
 #X connect 29 0 15 0;
+#X connect 31 0 23 0;
+#X connect 32 0 29 1;
+#X connect 33 0 34 0;
+#X connect 33 0 34 1;
+#X connect 34 0 32 1;
