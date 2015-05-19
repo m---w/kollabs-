@@ -1,10 +1,10 @@
-#N canvas 64 397 950 556 10;
-#N canvas 573 89 704 877 granulator 1;
+#N canvas 64 412 950 556 10;
+#N canvas 60 180 704 877 granulator 0;
 #X text 232 104 half window for one grain;
 #X obj 51 570 bng 15 250 50 0 empty empty overflow 17 7 0 10 -262144
 -1 -1;
 #X floatatom 377 588 5 0 0 0 voices_active - -, f 5;
-#N canvas 324 219 869 709 play 0;
+#N canvas 324 234 869 709 play 0;
 #X obj 63 778 outlet;
 #X text 257 150 attack+sustain;
 #X obj 63 60 inlet;
@@ -20,7 +20,7 @@
 #X text 420 42 release;
 #X obj 337 86 t b a;
 #X obj 288 131 + 0;
-#X obj 73 103 sel 0;
+#X obj 103 115 sel 0;
 #X msg 371 330 0;
 #X obj 371 354 pack 0 0;
 #X obj 715 67 inlet;
@@ -234,10 +234,11 @@
 #X obj 288 337 r \$0-outputs;
 #X obj 124 437 print A;
 #X obj 214 438 print B;
-#X obj 229 124 wnd-sin \$0-wnd 1024;
-#X obj 50 527 upp.xc 100 spat-varbus fx_granular_voice_var \$0-wnd
+#X obj 229 124 wnd-lin \$0-wnd 1024;
+#X obj 48 527 upp.xc 100 spat-varbus fx_granular_voice_var \$0-wnd
 1024 \$0-buffer;
 #X connect 3 0 27 0;
+#X connect 3 0 24 0;
 #X connect 3 1 27 1;
 #X connect 4 0 3 0;
 #X connect 6 0 10 0;
