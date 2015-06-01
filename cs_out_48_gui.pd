@@ -1,10 +1,10 @@
-#N canvas 238 156 941 517 10;
+#N canvas 238 166 941 517 10;
 #X obj 101 101 cnv 13 725 202 empty \$0-label \$1 2 7 0 10 -258699
 -1 0;
 #X obj 100 159 vsl 23 128 0 1.27 0 0 /fx/vol/cs/\$1 /fx/vol/cs/\$1
-empty 0 -9 0 10 -258699 -1 -1 0 1;
+empty 0 -9 0 10 -258699 -1 -1 9400 1;
 #X obj 100 290 nbx 3 14 -100 24 0 0 /fx/vol/cs/\$1/db /fx/vol/cs/\$1/db
-empty 0 -8 0 10 -258699 -1 -1 0 256;
+empty 0 -8 0 10 -258699 -1 -1 -1.11376 256;
 #X obj 100 115 nbx 3 14 -99 999 0 0 /fx/gain/cs/\$1 /fx/gain/cs/\$1
 empty 0 -8 0 10 -258699 -1 -1 0 256;
 #X obj 786 159 vsl 14 128 0 1 0 0 /fx/vol/cs/\$1/send /fx/vol/cs/\$1/send
@@ -14,7 +14,7 @@ empty 0 -9 0 10 -258699 -1 -1 0 1;
 #X obj 1006 161 s \$0-label;
 #X msg 1006 139 color \$1 22 22;
 #X obj 813 100 tgl 14 0 /cs/\$1/state /cs/\$1/state empty 17 7 0 10
--24198 -24198 -1 0 1;
+-24198 -24198 -1 1 1;
 #X obj 988 240 sel 0 1;
 #X msg 988 290 color \$1 \$1 22;
 #X msg 988 262 6;

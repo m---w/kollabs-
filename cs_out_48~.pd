@@ -1,4 +1,4 @@
-#N canvas 77 51 1198 687 10;
+#N canvas 3 202 1198 687 10;
 #N canvas 1 51 450 300 ds 0;
 #X obj 109 111 ds_reg \$2 /cs/channel/\$1/state nomorph;
 #X restore 1851 423 pd ds;

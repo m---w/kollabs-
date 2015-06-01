@@ -1,0 +1,49 @@
+#N canvas 416 181 452 478 10;
+#X text 58 316 (c)2015 Marian Weger;
+#X text 59 39 fx_livegrain_gui <name>;
+#X obj 101 115 cnv 15 239 114 empty empty empty 20 12 0 14 -228856
+-66577 0;
+#X obj 103 171 hsl 128 15 -48 48 0 0 /fx/livegrain/\$1/transpose /fx/livegrain/\$1/transpose
+transpose 10 8 0 10 -204800 -1 -1 6350 1;
+#X obj 327 115 tgl 14 0 /fx/livegrain/\$1/state /fx/livegrain/\$1/state
+empty 17 7 0 10 -4034 -1 -1 0 1;
+#X obj 100 157 nbx 5 14 -1e+07 99999 0 0 /fx/livegrain/\$1/transpose
+/fx/livegrain/\$1/transpose empty 0 -8 0 10 -204800 -1 -1 0 256;
+#X obj 233 216 nbx 5 14 0 99999 0 0 /fx/livegrain/\$1/predelay /fx/livegrain/\$1/predelay
+delay 3 -8 0 10 -262130 -1 -1 5 256;
+#X obj 287 216 nbx 5 14 -1e+37 1e+37 0 0 /fx/livegrain/\$1/position/random
+/fx/livegrain/\$1/position/random rnd 3 -8 0 10 -262130 -1 -1 0 256
+;
+#X obj 179 157 nbx 5 14 -1e+37 1e+37 0 0 /fx/livegrain/\$1/transpose/random
+/fx/livegrain/\$1/transpose/random rnd -21 8 0 10 -204800 -1 -1 0 256
+;
+#X obj 179 129 nbx 5 14 0 1e+37 0 0 /fx/livegrain/\$1/sustain /fx/livegrain/\$1/sustain
+sustain 0 -8 0 10 -261234 -1 -1 50 256;
+#X obj 125 129 nbx 5 14 0 1e+37 0 0 /fx/livegrain/\$1/attack /fx/livegrain/\$1/attack
+attack 0 -8 0 10 -261234 -1 -1 50 256;
+#X obj 233 129 nbx 5 14 0 1e+37 0 0 /fx/livegrain/\$1/release /fx/livegrain/\$1/release
+release 0 -8 0 10 -261234 -1 -1 50 256;
+#X obj 103 215 hsl 128 15 0 1 0 0 /fx/livegrain/\$1/reverse /fx/livegrain/\$1/reverse
+reverse 10 8 0 10 -261682 -1 -1 0 1;
+#X obj 103 200 hsl 128 15 0.1 10 1 0 /fx/livegrain/\$1/density /fx/livegrain/\$1/density
+density 10 8 0 10 -232576 -1 -1 6350 1;
+#X obj 100 186 nbx 5 14 0.1 10 1 0 /fx/livegrain/\$1/density /fx/livegrain/\$1/density
+empty 0 -8 0 10 -232576 -1 -1 1 256;
+#X obj 179 143 nbx 5 14 0 1e+37 0 0 /fx/livegrain/\$1/sustain/random
+/fx/livegrain/\$1/sustain/random empty 0 -8 0 10 -261234 -1 -1 0 256
+;
+#X obj 125 143 nbx 5 14 0 1e+37 0 0 /fx/livegrain/\$1/attack/random
+/fx/livegrain/\$1/attack/random empty 0 -8 0 10 -261234 -1 -1 0 256
+;
+#X obj 233 143 nbx 5 14 0 1e+37 0 0 /fx/livegrain/\$1/release/random
+/fx/livegrain/\$1/release/random empty 0 -8 0 10 -261234 -1 -1 0 256
+;
+#X text 100 129 dur;
+#X text 100 143 rnd;
+#X obj 179 186 nbx 5 14 -1e+37 1e+37 0 0 /fx/livegrain/\$1/density/random
+/fx/livegrain/\$1/density/random rnd -21 8 0 10 -232576 -1 -1 0 256
+;
+#X obj 287 143 nbx 5 14 -1e+37 1e+37 0 0 /fx/livegrain/\$1/delay/random
+/fx/livegrain/\$1/delay/random jitter 3 -8 0 10 -204786 -1 -1 0 256
+;
+#X coords 0 -1 1 1 241 130 1 100 100;

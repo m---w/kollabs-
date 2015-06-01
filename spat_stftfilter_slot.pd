@@ -10,7 +10,7 @@
 #X obj 305 499 1del0 15;
 #X obj 217 599 outlet~;
 #X obj 216 50 inlet~;
-#X obj 217 138 spat_erbfilter_slot_ifft \$1 \$2;
+#X obj 217 138 spat_stftfilter_slot_ifft \$1 \$2;
 #X obj 236 222 r \$1-outputs;
 #X obj 303 297 until;
 #X obj 303 319 f;
