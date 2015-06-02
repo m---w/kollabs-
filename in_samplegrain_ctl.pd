@@ -1,4 +1,4 @@
-#N canvas 1336 271 536 425 10;
+#N canvas 1336 276 536 425 10;
 #X obj 298 128 inlet statelist;
 #X obj 298 275 outlet statelist;
 #N canvas 1280 58 1280 940 ctl 0;
@@ -36,6 +36,10 @@
 #X obj 263 778 list prepend delay-random;
 #X obj 262 807 r /in/samplegrain/\$1/sample;
 #X obj 262 829 list prepend sample;
+#X obj 262 857 r /in/samplegrain/\$1/outputs;
+#X obj 262 879 list prepend outputs;
+#X obj 262 907 r /in/samplegrain/\$1/outputs/list;
+#X obj 262 929 list prepend outputs-list;
 #X connect 1 0 0 0;
 #X connect 2 0 1 0;
 #X connect 3 0 1 0;
@@ -69,9 +73,13 @@
 #X connect 31 0 1 0;
 #X connect 32 0 33 0;
 #X connect 33 0 1 0;
+#X connect 34 0 35 0;
+#X connect 35 0 1 0;
+#X connect 36 0 37 0;
+#X connect 37 0 1 0;
 #X restore 60 162 pd ctl;
 #X obj 60 314 outlet;
-#N canvas 163 335 450 445 ds 0;
+#N canvas 163 345 450 445 ds 0;
 #X obj 102 127 ds_reg \$2 /in/samplegrain/\$1/transpose;
 #X obj 102 147 ds_reg \$2 /in/samplegrain/\$1/state nomorph;
 #X obj 102 187 ds_reg \$2 /in/samplegrain/\$1/predelay;
@@ -87,8 +95,9 @@
 #X obj 102 347 ds_reg \$2 /in/samplegrain/\$1/attack/random;
 #X obj 102 367 ds_reg \$2 /in/samplegrain/\$1/release/random;
 #X obj 102 387 ds_reg \$2 /in/samplegrain/\$1/delay/random;
+#X obj 102 407 ds_reg \$2 /in/samplegrain/\$1/sample;
 #X restore 199 239 pd ds;
-#N canvas 340 185 450 505 osc 0;
+#N canvas 340 190 450 505 osc 0;
 #X obj 102 147 osc_bi \$2 /in/samplegrain/\$1/state;
 #X obj 102 127 osc_bi \$2 /in/samplegrain/\$1/transpose;
 #X obj 102 187 osc_bi \$2 /in/samplegrain/\$1/predelay;
@@ -105,8 +114,10 @@
 #X obj 102 367 osc_bi \$2 /in/samplegrain/\$1/release/random;
 #X obj 102 387 osc_bi \$2 /in/samplegrain/\$1/delay/random;
 #X obj 102 407 osc_bi \$2 /in/samplegrain/\$1/sample;
+#X obj 102 427 osc_bi \$2 /in/samplegrain/\$1/outputs;
+#X obj 102 447 osc_bi \$2 /in/samplegrain/\$1/outputs/list;
 #X restore 199 259 pd osc;
-#N canvas 631 334 463 456 init 0;
+#N canvas 631 339 463 456 init 1;
 #X obj 136 41 loadbang;
 #X obj 136 79 t b b;
 #X msg 368 145 1;
@@ -122,7 +133,8 @@
 0 \; /in/samplegrain/\$1/density 1 \; /in/samplegrain/\$1/density/random
 0 \; /in/samplegrain/\$1/attack/random 0 \; /in/samplegrain/\$1/release/random
 0 \; /in/samplegrain/\$1/delay/random 0 \; /in/samplegrain/\$1/sample
-\$3 \;;
+\$3 \; /in/samplegrain/\$1/outputs/list 1 \; /in/samplegrain/\$1/outputs
+1 \;;
 #X connect 0 0 1 0;
 #X connect 1 0 5 0;
 #X connect 1 1 2 0;

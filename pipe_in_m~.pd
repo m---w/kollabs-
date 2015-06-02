@@ -1,4 +1,4 @@
-#N canvas 292 218 545 374 10;
+#N canvas 1519 266 545 374 10;
 #X obj 20 275 outlet~;
 #X obj 419 330 outlet statelist;
 #X obj 434 278 switch~;
@@ -6,18 +6,19 @@
 #X obj 419 307 change 1;
 #X obj 429 215 t b f;
 #X obj 419 245 && 1;
-#X text 19 79 pipe_in~ <name> <domain> <type> (<arg1> <arg2> ...);
 #X text 102 311 (c)2013 Marian Weger;
 #X obj 224 162 in_\$3_ctl \$1 \$2 \$4 \$5 \$6 \$7 \$8 \$9;
-#X obj 20 205 in_\$3~ \$4 \$5 \$6 \$7 \$8 \$9;
+#X text 19 79 pipe_in_m~ <name> <domain> <type> (<arg1> <arg2> ...)
+;
+#X obj 20 205 in_\$3~ 1 \$4 \$5 \$6 \$7 \$8 \$9;
 #X connect 3 0 5 0;
 #X connect 4 0 1 0;
 #X connect 5 0 6 0;
 #X connect 5 1 6 1;
 #X connect 6 0 4 0;
 #X connect 6 0 2 0;
-#X connect 9 0 10 0;
-#X connect 9 1 6 0;
+#X connect 8 0 10 0;
+#X connect 8 1 6 0;
 #X connect 10 0 0 0;
-#X connect 10 1 9 0;
+#X connect 10 1 8 0;
 #X coords 0 374 1 373 85 60 0;

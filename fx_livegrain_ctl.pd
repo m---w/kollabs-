@@ -1,4 +1,4 @@
-#N canvas 1336 281 536 425 10;
+#N canvas 529 312 536 425 10;
 #X obj 298 128 inlet statelist;
 #X obj 298 275 outlet statelist;
 #N canvas 1280 58 1280 940 ctl 0;
@@ -34,6 +34,10 @@
 #X obj 257 724 list prepend release-random;
 #X obj 263 756 r /fx/livegrain/\$1/delay/random;
 #X obj 263 778 list prepend delay-random;
+#X obj 263 806 r /fx/livegrain/\$1/outputs;
+#X obj 263 866 r /fx/livegrain/\$1/outputs/list;
+#X obj 263 828 list prepend outputs;
+#X obj 263 888 list prepend outputs-list;
 #X connect 1 0 0 0;
 #X connect 2 0 1 0;
 #X connect 3 0 1 0;
@@ -65,9 +69,13 @@
 #X connect 29 0 1 0;
 #X connect 30 0 31 0;
 #X connect 31 0 1 0;
+#X connect 32 0 34 0;
+#X connect 33 0 35 0;
+#X connect 34 0 1 0;
+#X connect 35 0 1 0;
 #X restore 60 162 pd ctl;
 #X obj 60 314 outlet;
-#N canvas 163 340 450 445 ds 0;
+#N canvas 163 345 450 445 ds 0;
 #X obj 102 127 ds_reg \$2 /fx/livegrain/\$1/transpose;
 #X obj 102 147 ds_reg \$2 /fx/livegrain/\$1/state nomorph;
 #X obj 102 187 ds_reg \$2 /fx/livegrain/\$1/predelay;
@@ -84,7 +92,7 @@
 #X obj 102 367 ds_reg \$2 /fx/livegrain/\$1/release/random;
 #X obj 102 387 ds_reg \$2 /fx/livegrain/\$1/delay/random;
 #X restore 199 239 pd ds;
-#N canvas 340 190 450 505 osc 0;
+#N canvas 340 205 450 505 osc 0;
 #X obj 102 147 osc_bi \$2 /fx/livegrain/\$1/state;
 #X obj 102 127 osc_bi \$2 /fx/livegrain/\$1/transpose;
 #X obj 102 187 osc_bi \$2 /fx/livegrain/\$1/predelay;
@@ -100,8 +108,10 @@
 #X obj 102 347 osc_bi \$2 /fx/livegrain/\$1/attack/random;
 #X obj 102 367 osc_bi \$2 /fx/livegrain/\$1/release/random;
 #X obj 102 387 osc_bi \$2 /fx/livegrain/\$1/delay/random;
+#X obj 102 407 osc_bi \$2 /fx/livegrain/\$1/outputs;
+#X obj 102 427 osc_bi \$2 /fx/livegrain/\$1/outputs/list;
 #X restore 199 259 pd osc;
-#N canvas 631 334 463 456 init 0;
+#N canvas 136 357 463 456 init 1;
 #X obj 136 41 loadbang;
 #X obj 136 79 t b b;
 #X msg 368 145 1;
@@ -109,14 +119,15 @@
 #X obj 228 49 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 136 169 list prepend \$1 \$2 \$3;
-#X msg 139 204 \; /fx/livegrain/\$1/state 0 \; /fx/livegrain/\$1/transpose
+#X msg 139 203 \; /fx/livegrain/\$1/state 0 \; /fx/livegrain/\$1/transpose
 0 \; /fx/livegrain/\$1/attack 50 \; /fx/livegrain/\$1/predelay 5 \;
 /fx/livegrain/\$1/position/random 0 \; /fx/livegrain/\$1/transpose/random
 0 \; /fx/livegrain/\$1/sustain 50 \; /fx/livegrain/\$1/release 50 \;
 /fx/livegrain/\$1/sustain/random 0 \; /fx/livegrain/\$1/reverse 0 \;
 /fx/livegrain/\$1/density 1 \; /fx/livegrain/\$1/density/random 0 \;
 /fx/livegrain/\$1/attack/random 0 \; /fx/livegrain/\$1/release/random
-0 \; /fx/livegrain/\$1/delay/random 0 \;;
+0 \; /fx/livegrain/\$1/delay/random 0 \; /fx/livegrain/\$1/outputs/list
+1 \; /fx/livegrain/\$1/outputs 1 \;;
 #X connect 0 0 1 0;
 #X connect 1 0 5 0;
 #X connect 1 1 2 0;
