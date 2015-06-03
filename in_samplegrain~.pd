@@ -18,7 +18,7 @@
 #X obj 721 236 s \$0-attack-random;
 #X obj 726 205 s \$0-release-random;
 #X obj 747 181 s \$0-delay-random;
-#N canvas 467 95 704 877 samplegrain 1;
+#N canvas 467 100 704 877 samplegrain 0;
 #X text 232 104 half window for one grain;
 #X obj 51 570 bng 15 250 50 0 empty empty overflow 17 7 0 10 -262144
 -1 -1;
