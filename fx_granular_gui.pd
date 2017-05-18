@@ -1,8 +1,8 @@
-#N canvas 607 205 333 295 10;
+#N canvas 607 210 333 295 10;
 #X obj 103 128 hsl 128 15 -48 48 0 0 /fx/granular/\$1/transpose /fx/granular/\$1/transpose
 transpose 10 8 0 10 -204800 -1 -1 6350 1;
 #X obj 219 114 tgl 14 0 /fx/granular/\$1/state /fx/granular/\$1/state
-empty 17 7 0 10 -4034 -1 -1 0 1;
+empty 17 7 0 10 -4034 -1 -1 1 1;
 #X text 71 238 (c)2013 Marian Weger;
 #X obj 100 114 nbx 5 14 -1e+07 99999 0 0 /fx/granular/\$1/transpose
 /fx/granular/\$1/transpose empty 0 -8 0 10 -204800 -1 -1 0 256;
@@ -10,5 +10,5 @@ empty 17 7 0 10 -4034 -1 -1 0 1;
 #X obj 179 161 nbx 5 14 0 99999 0 0 /fx/granular/\$1/predelay /fx/granular/\$1/predelay
 del/ms 0 -8 0 10 -262130 -1 -1 0 256;
 #X obj 100 161 nbx 5 14 0 99999 0 0 /fx/granular/\$1/grainlength /fx/granular/\$1/grainlength
-length/ms 0 -8 0 10 -261234 -1 -1 0 256;
+length/ms 0 -8 0 10 -261234 -1 -1 50 256;
 #X coords 0 -1 1 1 133 75 1 100 100;

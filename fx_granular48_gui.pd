@@ -1,0 +1,40 @@
+#N canvas 593 196 452 478 10;
+#X obj 103 128 hsl 128 15 -48 48 0 0 /fx/granular/\$1/transpose /fx/granular/\$1/transpose
+transpose 10 8 0 10 -204800 -1 -1 6350 1;
+#X obj 219 114 tgl 14 0 /fx/granular/\$1/state /fx/granular/\$1/state
+empty 17 7 0 10 -4034 -1 -1 1 1;
+#X text 58 316 (c)2013 Marian Weger;
+#X obj 100 114 nbx 5 14 -1e+07 99999 0 0 /fx/granular/\$1/transpose
+/fx/granular/\$1/transpose empty 0 -8 0 10 -204800 -1 -1 0 256;
+#X text 59 39 fx_granular_gui <name>;
+#X obj 179 161 nbx 5 14 0 99999 0 0 /fx/granular/\$1/predelay /fx/granular/\$1/predelay
+del/ms 0 -8 0 10 -262130 -1 -1 1000 256;
+#X obj 100 161 nbx 5 14 0 99999 0 0 /fx/granular/\$1/grainlength /fx/granular/\$1/grainlength
+length/ms 0 -8 0 10 -261234 -1 -1 0 256;
+#X obj 254 146 nbx 5 14 -1e+37 1e+37 0 0 /fx/granular/\$1/position/random
+/fx/granular/\$1/position/random pos_rand 0 -8 0 10 -262144 -1 -1 115
+256;
+#X obj 253 116 nbx 5 14 -1e+37 1e+37 0 0 /fx/granular/\$1/transpose/random
+/fx/granular/\$1/transpose/random transpose/random 0 -8 0 10 -262144
+-1 -1 0 256;
+#X obj 174 226 nbx 5 14 -1e+37 1e+37 0 0 /fx/granular/\$1/sustain/random
+/fx/granular/\$1/sustain/random sustain_rand 0 -8 0 10 -262144 -1 -1
+86 256;
+#X obj 182 193 nbx 5 14 -1e+37 1e+37 0 0 /fx/granular/\$1/sustain /fx/granular/\$1/sustain
+sustain 0 -8 0 10 -262144 -1 -1 0 256;
+#X obj 111 199 nbx 5 14 -1e+37 1e+37 0 0 /fx/granular/\$1/attack /fx/granular/\$1/attack
+attack 0 -8 0 10 -262144 -1 -1 50 256;
+#X obj 255 176 nbx 5 14 -1e+37 1e+37 0 0 /fx/granular/\$1/release /fx/granular/\$1/release
+release 0 -8 0 10 -262144 -1 -1 50 256;
+#X obj 268 232 hsl 128 15 0 1 0 0 /fx/granular/\$1/reverse /fx/granular/\$1/reverse
+reverse -2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 340 140 tgl 14 0 /fx/granular/\$1/freeze /fx/granular/\$1/freeze
+freeze 17 7 0 10 -257985 -1 -1 1 1;
+#X obj 319 170 bng 15 250 50 0 /fx/granular/\$1/loadsample /fx/granular/\$1/loadsample
+loadsample 17 7 0 10 -262144 -1 -1;
+#X obj 104 231 nbx 5 14 -1e+37 1e+37 0 0 /fx/granular/\$1/density/random
+/fx/granular/\$1/density/random rnd_dense 0 -8 0 10 -262144 -1 -1 0
+256;
+#X obj 266 205 hsl 128 15 0 1 0 0 /fx/granular/\$1/density /fx/granular/\$1/density
+density -2 -8 0 10 -262144 -1 -1 0 1;
+#X coords 0 -1 1 1 300 150 1 100 100;

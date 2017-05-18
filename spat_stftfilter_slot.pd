@@ -1,4 +1,4 @@
-#N canvas 1762 284 663 621 10;
+#N canvas 1427 233 663 621 10;
 #X text 427 172 output buffer (size = 1 block);
 #X obj 430 194 table \$1-processed-real-\$2 512;
 #X obj 430 214 table \$1-processed-imag-\$2 512;
@@ -10,7 +10,7 @@
 #X obj 305 499 1del0 15;
 #X obj 217 599 outlet~;
 #X obj 216 50 inlet~;
-#X obj 217 138 spat_erbfilter_slot_ifft \$1 \$2;
+#X obj 217 138 spat_stftfilter_slot_ifft \$1 \$2;
 #X obj 236 222 r \$1-outputs;
 #X obj 303 297 until;
 #X obj 303 319 f;
@@ -29,6 +29,8 @@
 #X obj 450 534 s \$1-processed-imag-\$2;
 #X msg 427 485 const 0;
 #X obj 305 521 t f b;
+#X obj 422 575 r \$1-subblocksize;
+#X msg 422 597 set \$1 1 1;
 #X connect 4 0 9 0;
 #X connect 5 0 6 0;
 #X connect 6 0 4 1;
@@ -60,3 +62,5 @@
 #X connect 28 0 27 0;
 #X connect 29 0 3 0;
 #X connect 29 1 28 0;
+#X connect 30 0 31 0;
+#X connect 31 0 3 0;

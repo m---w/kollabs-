@@ -1,9 +1,9 @@
-#N canvas 3 98 536 425 10;
+#N canvas 1 97 536 425 10;
 #X obj 298 128 inlet statelist;
 #X obj 298 275 outlet statelist;
-#N canvas 385 146 714 479 ctl 0;
-#X obj 68 794 outlet;
-#X obj 68 731 list trim;
+#N canvas 381 142 714 479 ctl 0;
+#X obj 69 877 outlet;
+#X obj 69 814 list trim;
 #X obj 74 50 list prepend transpose;
 #X obj 84 100 list prepend state;
 #X obj 74 28 r /fx/granular/\$1/transpose;
@@ -30,6 +30,13 @@
 #X obj 244 616 list prepend sustain-random;
 #X obj 244 644 r /fx/granular/\$1/reverse;
 #X obj 244 666 list prepend reverse;
+#X obj 251 698 r /fx/granular/\$1/loadsample;
+#X obj 251 720 t b;
+#X msg 251 742 loadsample;
+#X obj 256 788 list prepend freeze;
+#X obj 256 766 r /fx/granular/\$1/freeze;
+#X obj 251 834 r /fx/granular/\$1/density/random;
+#X obj 251 856 list prepend density-random;
 #X connect 1 0 0 0;
 #X connect 2 0 1 0;
 #X connect 3 0 1 0;
@@ -57,9 +64,16 @@
 #X connect 25 0 1 0;
 #X connect 26 0 27 0;
 #X connect 27 0 1 0;
+#X connect 28 0 29 0;
+#X connect 29 0 30 0;
+#X connect 30 0 1 0;
+#X connect 31 0 1 0;
+#X connect 32 0 31 0;
+#X connect 33 0 34 0;
+#X connect 34 0 1 0;
 #X restore 60 162 pd ctl;
 #X obj 60 314 outlet;
-#N canvas 167 324 450 445 ds 1;
+#N canvas 163 325 450 445 ds 0;
 #X obj 102 127 ds_reg \$2 /fx/granular/\$1/transpose;
 #X obj 102 147 ds_reg \$2 /fx/granular/\$1/state nomorph;
 #X obj 102 187 ds_reg \$2 /fx/granular/\$1/predelay;
@@ -71,8 +85,10 @@
 #X obj 102 267 ds_reg \$2 /fx/granular/\$1/release;
 #X obj 102 287 ds_reg \$2 /fx/granular/\$1/sustain/random;
 #X obj 102 307 ds_reg \$2 /fx/granular/\$1/reverse;
+#X obj 102 327 ds_reg \$2 /fx/granular/\$1/freeze;
+#X obj 102 347 ds_reg \$2 /fx/granular/\$1/density/random;
 #X restore 199 239 pd ds;
-#N canvas 344 164 450 505 osc 0;
+#N canvas 340 160 450 505 osc 0;
 #X obj 102 147 osc_bi \$2 /fx/granular/\$1/state;
 #X obj 102 127 osc_bi \$2 /fx/granular/\$1/transpose;
 #X obj 102 187 osc_bi \$2 /fx/granular/\$1/predelay;
@@ -87,23 +103,31 @@
 #X obj 102 327 osc_bi \$2 /fx/granular/\$1/reverse;
 #X obj 102 347 osc_bi \$2 /fx/granular/\$1/outputs;
 #X obj 102 367 osc_bi \$2 /fx/granular/\$1/outputs/list;
+#X obj 102 387 osc_bi \$2 /fx/granular/\$1/loadsample;
+#X obj 102 407 osc_bi \$2 /fx/granular/\$1/freeze;
+#X obj 102 427 osc_bi \$2 /fx/granular/\$1/density/random;
 #X restore 199 259 pd osc;
-#N canvas 659 268 463 402 init 0;
+#N canvas 655 269 463 456 init 1;
 #X obj 136 41 loadbang;
 #X obj 136 79 t b b;
 #X msg 368 145 1;
 #X obj 368 167 outlet;
 #X obj 136 169 list prepend \$1 \$2;
-#X msg 136 201 \; /fx/granular/\$1/state 0 \; /fx/granular/\$1/transpose
-0 \; /fx/granular/\$1/grainlength 50 \; /fx/granular/\$1/predelay 50
-\; /fx/granular/\$1/position/random 0 \; /fx/granular/\$1/density 1
-\; /fx/granular/\$1/transpose/random 0 \; /fx/granular/\$1/outputs
-1 \; /fx/granular/\$1/outputs/list 0 \;;
+#X obj 228 49 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 139 202 \; /fx/granular/\$1/state 0 \; /fx/granular/\$1/transpose
+0 \; /fx/granular/\$1/attack 50 \; /fx/granular/\$1/predelay 50 \;
+/fx/granular/\$1/position/random 0 \; /fx/granular/\$1/transpose/random
+0 \; /fx/granular/\$1/outputs 1 \; /fx/granular/\$1/outputs/list 0
+\; /fx/granular/\$1/sustain 50 \; /fx/granular/\$1/release 50 \; /fx/granular/\$1/sustain/random
+0 \; /fx/granular/\$1/reverse 0 \; /fx/granular/\$1/freeze 0 \; /fx/granular/\$1/density
+1 \; /fx/granular/\$1/density/random 0 \;;
 #X connect 0 0 1 0;
 #X connect 1 0 4 0;
 #X connect 1 1 2 0;
 #X connect 2 0 3 0;
-#X connect 4 0 5 0;
+#X connect 4 0 6 0;
+#X connect 5 0 1 0;
 #X restore 421 130 pd init;
 #X text 40 12 fx_granular_ctl <name> <domain>;
 #X text 290 331 (c)2013 Marian Weger;
