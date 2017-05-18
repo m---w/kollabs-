@@ -1,40 +1,40 @@
-#N canvas 125 54 564 517 10;
+#N canvas 466 1164 564 517 10;
 #X text 89 366 (c)2012 Marian Weger;
 #X obj 101 101 cnv 13 74 216 empty \$0-label \$1 2 7 0 10 -262144 -1
 0;
-#X obj 100 173 vsl 23 128 0 1.27 0 0 /fx/vol/channel/\$1 /fx/vol/channel/\$1
-empty 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 100 304 nbx 3 14 -100 24 0 0 /fx/vol/channel/\$1/db /fx/vol/channel/\$1/db
+#X obj 100 173 vsl 23 128 0 1.27 0 0 /fx/vol/cs/\$1 /fx/vol/cs/\$1
+empty 0 -9 0 10 -262144 -1 -1 12700 1;
+#X obj 100 304 nbx 3 14 -100 24 0 0 /fx/vol/cs/\$1/db /fx/vol/cs/\$1/db
 empty 0 -8 0 10 -262144 -1 -1 0 256;
-#X obj 100 115 nbx 3 14 -99 999 0 0 /fx/gain/channel/\$1 /fx/gain/channel/\$1
+#X obj 100 115 nbx 3 14 -99 999 0 0 /fx/gain/cs/\$1 /fx/gain/cs/\$1
 empty 0 -8 0 10 -262144 -1 -1 0 256;
-#X obj 162 173 vsl 14 128 0 1 0 0 /fx/vol/channel/\$1/send /fx/vol/channel/\$1/send
+#X obj 162 173 vsl 14 128 0 1 0 0 /fx/vol/cs/\$1/send /fx/vol/cs/\$1/send
 empty 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 162 157 tgl 14 0 /mix/mux/channel/\$1/send /mix/mux/channel/\$1/send
+#X obj 162 157 tgl 14 0 /mix/mux/cs/\$1/send /mix/mux/cs/\$1/send
 p 4 7 0 10 -262144 -1 -1 0 1;
 #X obj 262 109 loadbang;
 #X obj 262 131 f \$2;
 #X obj 262 175 s \$0-label;
 #X msg 262 153 color \$1 22 22;
-#X obj 162 304 tgl 14 0 /fx/state/channel/\$1/monitor /fx/state/channel/\$1/monitor
+#X obj 162 304 tgl 14 0 /fx/state/cs/\$1/monitor /fx/state/cs/\$1/monitor
 empty 17 7 0 10 -257985 -1 -1 0 1;
-#X obj 148 304 tgl 14 0 /mix/mux/channel/\$1/monitor /mix/mux/channel/\$1/monitor
+#X obj 148 304 tgl 14 0 /mix/mux/cs/\$1/monitor /mix/mux/cs/\$1/monitor
 p 4 7 0 10 -257985 -1 -1 0 1;
-#X obj 162 115 tgl 14 0 /cs/channel/\$1/state /cs/channel/\$1/state
-empty 17 7 0 10 -225271 -225271 -1 0 1;
+#X obj 162 115 tgl 14 0 /cs/\$1/state /cs/\$1/state
+empty 17 7 0 10 -24198 -24198 -1 1 1;
 #X obj 295 253 sel 0 1;
 #X msg 295 303 color \$1 \$1 22;
-#X obj 295 231 r /cs/channel/\$1/state;
 #X msg 295 275 6;
 #X msg 325 275 16;
-#X obj 123 171 an_vu_2_gui channel/\$1;
-#X obj 100 143 fx_limiter_gui channel/\$1;
-#X obj 100 157 fx_eq7_gui channel/\$1;
-#X obj 100 129 fx_gate_gui channel/\$1;
-#X obj 148 115 fx_mute_gui channel/\$1;
-#X obj 147 270 tgl 15 0 /mix/mux/channel/\$1/vu /mix/mux/channel/\$1/vu
-pr 2 -7 0 10 -261682 -1 -1 0 1;
+#X obj 123 171 an_vu_2_gui cs/\$1;
+#X obj 100 143 fx_limiter_gui cs/\$1;
+#X obj 100 157 fx_eq7_gui cs/\$1;
+#X obj 100 129 fx_gate_gui cs/\$1;
+#X obj 148 115 fx_mute_gui cs/\$1;
+#X obj 147 270 tgl 15 0 /mix/mux/cs/\$1/vu /mix/mux/cs/\$1/vu
+pr 2 -7 0 10 -261682 -1 -1 1 1;
 #X text 45 31 cs_full_2_gui <name> (<label color>);
+#X obj 295 231 r /cs/\$1/state;
 #X connect 7 0 8 0;
 #X connect 8 0 10 0;
 #X connect 10 0 9 0;
@@ -43,10 +43,10 @@ pr 2 -7 0 10 -261682 -1 -1 0 1;
 #X connect 10 0 5 0;
 #X connect 10 0 6 0;
 #X connect 10 0 4 0;
-#X connect 14 0 17 0;
-#X connect 14 1 18 0;
+#X connect 14 0 16 0;
+#X connect 14 1 17 0;
 #X connect 15 0 13 0;
-#X connect 16 0 14 0;
+#X connect 16 0 15 0;
 #X connect 17 0 15 0;
-#X connect 18 0 15 0;
+#X connect 25 0 14 0;
 #X coords 0 -1 1 1 76 218 2 100 100;
